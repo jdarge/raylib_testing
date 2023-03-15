@@ -36,7 +36,7 @@ $ ./run make
 $ ./run build
 ```
 
-### ./run rebuild:
+### ./run rebuild :
 Deletes previously generated files and then runs CMake and Make
 ```console
 $ ./run rebuild
