@@ -6,8 +6,6 @@ int main(void) {
     
     char *s = bar();
     printf("%s\n", s);
-    
     free(s);
-    
     return 0;
 }
