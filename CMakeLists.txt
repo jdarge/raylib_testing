@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.25)
 
 # Setting a variable to use for both the project name and the resulting binary executable
 set(REPO template)
