@@ -10,7 +10,7 @@
 ├── driver.c
 ├── include
 │   └── foo.h
-├── run.sh []
+├── run.sh
 └── src
     └── foo.c
 ```
