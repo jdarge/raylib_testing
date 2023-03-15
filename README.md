@@ -36,7 +36,7 @@ $ ./run build
 ```
 
 ### ./run clean :
-Removes items from both <ins>build/bin</ins> and <ins>build/cmake</ins>
+Removes the <ins>build/</ins> directory.
 ```console 
 $ ./run clean
 ```
