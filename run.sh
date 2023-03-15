@@ -14,17 +14,17 @@ then
 elif [ "$1" == "clean" ]
 then
     rm -rf build/
-elif [ $# -eq 0 ] 
+elif [ "$1" == "help" ]
 then
+    echo -e "Build project:\t ./run build"
+    echo -e "Rebuild project: ./run rebuild"
+    echo -e "Clean project:\t ./run clean"
+    echo -e "Run project:\t ./run"
+else 
     if [ -e build/bin/$project ]
     then
-        exec build/bin/$project
+        exec build/bin/$project "$@"
     else 
         echo "No binary executable named \"$project\" found in the directory \"build/bin/\""
     fi
-else 
-    echo -e "Build project:\t./run build"
-    echo -e "Rebuild project:\t./run rebuild"
-    echo -e "Clean project:\t./run clean"
-    echo -e "Run project:\t./run"
 fi
