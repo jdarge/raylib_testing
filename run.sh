@@ -5,12 +5,15 @@ project="template"
 if [ "$1" == "build" ] || [ "$1" == "make" ]
 then
     cmake -B build/cmake/ -S .
-    echo
+    make -C build/cmake/
+elif [ "$1" == "rebuild" ]
+then 
+    rm -rf build/bin/* build/cmake/*
+    cmake -B build/cmake/ -S . 
     make -C build/cmake/
 elif [ "$1" == "clean" ]
 then
     rm -rf build/
-    # rm -rf build/bin/* build/cmake/*
 elif [ $# -eq 0 ] 
 then
     if [ -e build/bin/$project ]
@@ -21,6 +24,7 @@ then
     fi
 else 
     echo -e "Build project:\t./run build"
+    echo -e "Rebuild project:\t./run rebuild"
     echo -e "Clean project:\t./run clean"
     echo -e "Run project:\t./run"
 fi
