@@ -9,7 +9,8 @@ then
     make -C build/cmake/
 elif [ "$1" == "clean" ]
 then
-    rm -rf build/bin/* build/cmake/*
+    rm -rf build/
+    # rm -rf build/bin/* build/cmake/*
 elif [ $# -eq 0 ] 
 then
     if [ -e build/bin/$project ]
