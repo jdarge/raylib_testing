@@ -19,6 +19,7 @@
 <b>Note</b>: I personally renamed <ins>run.sh</ins> to <ins>run</ins> because it's easier to use.
 ```console
 $ ./run [build/make]
+$ ./run rebuild
 $ ./run clean
 $ ./run
 ```
@@ -33,6 +34,12 @@ Both do the same thing.
 ```console 
 $ ./run make
 $ ./run build
+```
+
+### ./run rebuild:
+Deletes previously generated files and then runs CMake and Make
+```console
+$ ./run rebuild
 ```
 
 ### ./run clean :
