@@ -10,7 +10,7 @@
 ├── driver.c
 ├── include
 │   └── foo.h
-├── run.sh
+├── run.sh []
 └── src
     └── foo.c
 ```
@@ -53,6 +53,9 @@ If there is binary executable inside of <ins>build/bin</ins> it will run it.
 ```console
 $ ./run
 ```
+You can also pass in any command line argument into main!
+```console
+$ ./run <arg1> <arg2> <...>
 
 <br><b>Note:</b> the <ins>project</ins> name and <ins>binary executable</ins> name are hardcoded.
 1. run.sh : $project (line no. <b>3</b>)
