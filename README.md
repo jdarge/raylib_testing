@@ -7,7 +7,6 @@
 │   ├── bin
 │   └── cmake
 ├── CMakeLists.txt
-├── documentation
 ├── driver.c
 ├── include
 │   └── foo.h
