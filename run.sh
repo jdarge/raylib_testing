@@ -25,6 +25,16 @@ else
     then
         exec build/bin/$project "$@"
     else 
-        echo "No binary executable named \"$project\" found in the directory \"build/bin/\""
+        echo "No binary executable named \"$project\" found in the directory \"build/bin/\"."
+        echo "Building..."
+
+        cmake -B build/cmake/ -S .
+        make -C build/cmake/
+		if [ -e build/bin/$project ]
+		then 
+			exec build/bin/$project "$@"
+		else 
+			echo "Project built, but no binary executable found. Verify your project names match between the shell script and CMakeLists.txt"
+		fi
     fi
 fi
