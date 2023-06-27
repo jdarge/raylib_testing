@@ -60,4 +60,4 @@ $ ./run <arg1> <arg2> <...>
 
 <br><b>Note:</b> the <ins>project</ins> name and <ins>binary executable</ins> name are hardcoded.
 1. run.sh : $project (line no. <b>3</b>)
-2. CmakeLists.txt : $REPO (line no. <b>9</b>)
+2. CmakeLists.txt : $REPO (line no. <b>4</b>)
