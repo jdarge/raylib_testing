@@ -49,7 +49,7 @@ $ ./run clean
 ```
 
 ### ./run :
-If there is binary executable inside of <ins>build/bin</ins> it will run it.
+If there is binary executable inside of <ins>build/bin</ins> it will run it. If there isn't, it will build, make, and then run.
 ```console
 $ ./run
 ```
