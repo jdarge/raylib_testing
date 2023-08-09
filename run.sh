@@ -1,6 +1,6 @@
 #!/bin/sh
 
-project="timer"
+project="template"
 
 if [ "$1" = "build" ] || [ "$1" = "make" ]; then
   cmake -B build/cmake/ -S .
