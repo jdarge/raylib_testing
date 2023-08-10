@@ -92,7 +92,7 @@ int main(void) {
         if (grounded) {
             scarfy->v.y = 0;
             scarfy->pos.y = ground_position - (float) scarfy->height;
-            if(ground_check == false) {
+            if (ground_check == false) {
                 PlaySound(sound_landing);
             }
         } else {
@@ -107,7 +107,7 @@ int main(void) {
                 if (grounded) {
                     ++frame_index;
                     frame_index %= scarfy->frames;
-                    if(frame_index == 1 || frame_index == 4) {
+                    if (frame_index == 1 || frame_index == 4) {
                         PlaySound(sound_walking);
                     }
                 } else {
