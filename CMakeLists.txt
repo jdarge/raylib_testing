@@ -1,9 +1,9 @@
-cmake_minimum_required(VERSION 3.25)
+cmake_minimum_required(VERSION 3.23.2)
 
 # Setting a variable to use for both the project name and the resulting binary executable
-set(REPO template)
+set(REPO scarfy)
 project(${REPO})
-set(PROJECT_NAME ${REPO}) 
+set(PROJECT_NAME ${REPO})
 
 
 
@@ -52,4 +52,4 @@ include_directories(${PROJECT_SOURCE_DIR}/build/cmake)
 
 
 # Add any other dependencies here, such as libraries or additional build options
-
+target_link_libraries(${PROJECT_NAME} PRIVATE raylib)

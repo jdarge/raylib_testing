@@ -1,6 +1,6 @@
 #!/bin/sh
 
-project="template"
+project="scarfy"
 
 if [ "$1" = "build" ] || [ "$1" = "make" ]; then
   cmake -B build/cmake/ -S .
