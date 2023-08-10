@@ -48,3 +48,8 @@ include_directories(${PROJECT_SOURCE_DIR}/build/cmake)
 
 # Add any other dependencies here, such as libraries or additional build options
 target_link_libraries(${PROJECT_NAME} PRIVATE raylib)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES
+    INSTALL_RPATH "/usr/local/lib;/usr/local/lib64"
+    BUILD_WITH_INSTALL_RPATH TRUE
+)
