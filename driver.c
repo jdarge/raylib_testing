@@ -10,10 +10,8 @@
 void show_error(char *err) {
     while (!WindowShouldClose()) {
         BeginDrawing();
-
         ClearBackground(BLACK);
         DrawText(err, 20, 20, 20, RED);
-
         EndDrawing();
     }
 }
