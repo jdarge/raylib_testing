@@ -1,7 +1,7 @@
 #ifndef PHYSICS_INCLUDED
 #define PHYSICS_INCLUDED
 
-#include "character.h";
+#include "character.h"
 
 void update_movement(Character *character);
 
