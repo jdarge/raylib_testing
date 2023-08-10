@@ -8,7 +8,9 @@ extern Sound sound_jumping;
 extern Sound sound_landing;
 
 void play_sound_walking(void);
+
 void play_sound_jumping(void);
+
 void play_sound_landing(void);
 
 #endif

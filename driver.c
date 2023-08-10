@@ -48,8 +48,8 @@ int main(void) {
         }
 
         next_frame(scarfy);
-        if(moving && grounded) {
-            if(is_touching_ground_frame()) {
+        if (moving && grounded) {
+            if (is_touching_ground_frame()) {
                 play_sound_walking();
             }
         }

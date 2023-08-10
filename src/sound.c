@@ -20,7 +20,7 @@ void play_sound_jumping(void) {
 }
 
 void play_sound_landing(void) {
-    if(!IsSoundReady(sound_landing)) {
+    if (!IsSoundReady(sound_landing)) {
         sound_landing = LoadSound("resources/sounds/moving/land.mp3");
     }
     PlaySound(sound_landing);
